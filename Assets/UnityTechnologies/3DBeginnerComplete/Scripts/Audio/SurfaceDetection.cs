@@ -22,6 +22,10 @@ public class SurfaceDetection : MonoBehaviour
             }
             if (hit.collider.CompareTag("Bathroom"))
             {
+                playerMovement.surfaceID = 2;
+            }
+            if (hit.collider.CompareTag("Rug"))
+            {
                 playerMovement.surfaceID = 1;
             }
         }
